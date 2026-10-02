@@ -1,0 +1,9 @@
+import { ArrowDownRight } from 'lucide-react'
+import { motion, useReducedMotion } from 'framer-motion'
+import { Section } from '../layout/Section'
+import { SignatureAccent } from '../ui/SignatureAccent'
+
+export function FinalCTA() {
+  const reduceMotion = useReducedMotion()
+  return <Section className="border-t border-[var(--color-border)] py-14 sm:py-20 lg:py-20"><motion.div initial={reduceMotion ? false : { opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col justify-between gap-7 rounded-2xl border border-[var(--color-border-strong)] bg-[linear-gradient(135deg,rgba(124,140,255,0.11),rgba(255,255,255,0.018)_55%,rgba(255,255,255,0.04))] p-6 shadow-[var(--shadow-glass)] sm:p-8 lg:flex-row lg:items-center"><div><div className="flex items-center gap-2.5"><SignatureAccent /><span className="font-mono text-[0.65rem] uppercase tracking-[0.15em] text-[var(--color-accent)]">Build something useful</span></div><h2 className="mt-4 text-balance text-3xl font-semibold tracking-[-0.045em] text-white sm:text-4xl">Have an idea worth building?</h2><p className="mt-3 text-[var(--color-text-muted)]">Let&apos;s turn it into something real.</p></div><div className="flex flex-col gap-3 sm:flex-row"><a href="#projects" className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-[var(--color-border-strong)] px-4 text-sm font-medium text-white transition-colors hover:border-[var(--color-accent)] hover:bg-white/[0.05]">View Projects <ArrowDownRight size={16} aria-hidden="true" /></a><a href="#contact" className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[var(--color-accent)] px-4 text-sm font-medium text-white transition-colors hover:bg-[var(--color-accent-strong)]">Get In Touch</a></div></motion.div></Section>
+}

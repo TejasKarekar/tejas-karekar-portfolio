@@ -1,0 +1,8 @@
+import type { Experience } from '../../types/portfolio'
+import { TechnologyChip } from '../projects/TechnologyChip'
+
+type ExperienceCardProps = { experience: Experience }
+
+export function ExperienceCard({ experience }: ExperienceCardProps) {
+  return <article className="rounded-2xl border border-[var(--color-border-strong)] bg-[linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.015))] p-5 shadow-[var(--shadow-glass)] sm:p-7"><p className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-[var(--color-accent)]">{experience.type} / {experience.duration}</p><h3 className="mt-4 text-2xl font-semibold tracking-[-0.04em] text-white sm:text-3xl">{experience.role}</h3><p className="mt-2 text-base font-medium text-white">{experience.company}</p><p className="mt-1 text-sm text-[var(--color-text-subtle)]">{experience.location}</p><p className="mt-6 text-sm leading-6 text-[var(--color-text-muted)] sm:text-base sm:leading-7">{experience.description}</p><p className="mt-4 border-l border-[var(--color-accent)]/50 pl-4 text-sm leading-6 text-[var(--color-text-muted)]">{experience.context}</p><ul className="mt-5 grid gap-2">{experience.highlights.map((highlight) => <li key={highlight} className="flex gap-2 text-sm leading-6 text-[var(--color-text-muted)]"><span className="mt-2 size-1 shrink-0 rounded-full bg-[var(--color-accent)]" aria-hidden="true" />{highlight}</li>)}</ul>{experience.technologies.length > 0 && <div className="mt-6 flex flex-wrap gap-2" aria-label="Experience technologies">{experience.technologies.map((technology) => <TechnologyChip key={technology} technology={technology} />)}</div>}</article>
+}

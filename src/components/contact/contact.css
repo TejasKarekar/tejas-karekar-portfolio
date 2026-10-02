@@ -1,0 +1,4 @@
+.contact-atmosphere { position: absolute; inset: 0; pointer-events: none; overflow: hidden; background: radial-gradient(circle at 82% 45%, rgba(124,140,255,.09), transparent 24rem); }
+.contact-atmosphere::before { content: ''; position: absolute; right: 9%; top: 18%; width: 17rem; height: 17rem; border: 1px solid rgba(124,140,255,.12); border-radius: 50%; box-shadow: 0 0 0 2rem rgba(124,140,255,.025), 0 0 0 4rem rgba(124,140,255,.018); }
+.contact-atmosphere span { position: absolute; width: .35rem; height: .35rem; border-radius: 50%; background: var(--color-accent); opacity: .5; box-shadow: 0 0 14px var(--color-accent); }
+.contact-atmosphere span:nth-child(1) { right: 19%; top: 28%; }.contact-atmosphere span:nth-child(2) { right: 34%; top: 54%; }.contact-atmosphere span:nth-child(3) { right: 13%; top: 68%; }

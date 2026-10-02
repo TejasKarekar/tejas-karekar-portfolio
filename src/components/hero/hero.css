@@ -1,0 +1,8 @@
+.hero-atmosphere { position: absolute; inset: 0; overflow: hidden; background: radial-gradient(circle at 78% 43%, rgba(92, 109, 255, 0.12), transparent 28rem), radial-gradient(circle at 16% 90%, rgba(50, 77, 126, 0.11), transparent 32rem), var(--color-canvas); }
+.hero-grid { position: absolute; inset: 0; opacity: 0.32; background-image: linear-gradient(rgba(170, 185, 220, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(170, 185, 220, 0.04) 1px, transparent 1px); background-size: 56px 56px; mask-image: linear-gradient(to bottom, transparent, black 12%, black 75%, transparent); }
+.hero-atmosphere::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9, 11, 16, 0.1), rgba(9, 11, 16, 0.52) 68%, rgba(9, 11, 16, 0.9)); }
+.hero-orb { position: absolute; border-radius: 999px; filter: blur(3px); }
+.hero-orb-one { top: 18%; right: 18%; width: 18rem; height: 18rem; background: radial-gradient(circle, rgba(124, 140, 255, 0.13), transparent 70%); }
+.hero-orb-two { bottom: -8rem; left: 10%; width: 22rem; height: 22rem; background: radial-gradient(circle, rgba(73, 116, 177, 0.11), transparent 70%); }
+@media (max-width: 1023px) { .hero-atmosphere::after { background: linear-gradient(180deg, rgba(9, 11, 16, 0.05), rgba(9, 11, 16, 0.42) 72%, rgba(9, 11, 16, 0.76)); } .hero-grid { background-size: 44px 44px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; } }

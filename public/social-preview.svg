@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#090b10"/>
+  <circle cx="965" cy="235" r="270" fill="#7c8cff" fill-opacity=".12"/>
+  <circle cx="1060" cy="150" r="170" fill="#7c8cff" fill-opacity=".08"/>
+  <g stroke="#aab5db" stroke-opacity=".12"><path d="M0 70H1200M0 170H1200M0 270H1200M0 370H1200M0 470H1200M0 570H1200"/><path d="M70 0V630M270 0V630M470 0V630M670 0V630M870 0V630M1070 0V630"/></g>
+  <rect x="92" y="92" width="68" height="68" rx="16" fill="#10131b" stroke="#7c8cff" stroke-opacity=".7"/>
+  <text x="126" y="136" text-anchor="middle" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="27" font-weight="700">TK</text>
+  <text x="92" y="260" fill="#a3adbd" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">SOFTWARE DEVELOPER • AI PRODUCT BUILDER</text>
+  <text x="92" y="355" fill="#f4f7fb" font-family="Arial, sans-serif" font-size="70" font-weight="700">Tejas Karekar</text>
+  <text x="92" y="425" fill="#a3adbd" font-family="Arial, sans-serif" font-size="31">Building ideas into real digital products.</text>
+</svg>
