@@ -3,7 +3,7 @@ import type { AboutContent, Achievement, BuildLabCategory, Certification, Educat
 export const personalInfo: PersonalInfo = {
   name: 'Tejas Karekar', displayName: 'Tejas Karekar', role: 'Software Developer | Data Science & Mobile Application Specialist',
   shortBio: 'I build mobile applications and data-driven software using Android, Kotlin, Python, machine learning, Firebase, and modern development tools.',
-  email: 'tejaskarekar17@gmail.com', phone: '+91 7768082595', github: 'https://github.com/TejasKarekar', linkedin: 'https://linkedin.com/in/tejas-karekar-a6b825226', resume: null, profileImage: null,
+  email: 'tejaskarekar17@gmail.com', phone: '+91 7768082595', github: 'https://github.com/TejasKarekar', linkedin: 'https://linkedin.com/in/tejas-karekar-a6b825226', resume: '/resume.pdf', profileImage: null,
   areas: ['Android Development', 'Data Science', 'Machine Learning', 'Backend Integration', 'Product Development'],
 }
 
